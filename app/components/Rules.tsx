@@ -12,15 +12,10 @@ const rulesData = [
   {
     number: 3,
     title: "Team Size",
-    text: "Solo developers and teams of up to 4 people are allowed. Join our community group to easily find teammates!",
+    text: "Only solo participation during the hackathon is allowed!",
   },
   {
     number: 4,
-    title: "Game Content",
-    text: "Games should generally be appropriate for all ages, with the exception of scary/violent content in horror games. No offensive, hateful, or explicit content.",
-  },
-  {
-    number: 5,
     title: "Be Kind",
     text: "Provide constructive feedback to others and maintain a supportive community atmosphere!",
   },
