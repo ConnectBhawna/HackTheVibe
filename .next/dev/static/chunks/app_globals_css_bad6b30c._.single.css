@@ -1363,6 +1363,119 @@ html {
   line-height: 1.4;
 }
 
+.facilitators-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 12px;
+  display: grid;
+}
+
+.facilitator-card {
+  background: var(--poster-white);
+  border: 2.5px solid var(--rules-card-border);
+  text-align: center;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 16px;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 20px 22px;
+  text-decoration: none;
+  transition: transform .22s, box-shadow .22s, border-color .22s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.facilitator-card:hover {
+  border-color: var(--rules-accent);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px #0737ff1f;
+}
+
+.facilitator-photo-wrapper {
+  border: 3px solid var(--rules-accent);
+  background: var(--rules-card-bg);
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 110px;
+  height: 110px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.facilitator-photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.facilitator-photo-fallback {
+  background: linear-gradient(135deg, var(--rules-accent), #4f6dff);
+  color: #fff;
+  letter-spacing: .05em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+}
+
+.facilitator-name {
+  color: var(--rules-accent);
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.facilitator-desc {
+  color: #3a3a3a;
+  flex-grow: 1;
+  margin: 0 0 14px;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.facilitator-linkedin-badge {
+  background: var(--rules-accent);
+  color: #fff;
+  border-radius: 999px;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: .82rem;
+  font-weight: 700;
+  transition: background .2s;
+  display: inline-flex;
+}
+
+.facilitator-card:hover .facilitator-linkedin-badge {
+  background: #0527cc;
+}
+
+@media (max-width: 640px) {
+  .facilitators-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+  }
+
+  .facilitator-photo-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .facilitator-name {
+    font-size: 1rem;
+  }
+
+  .facilitator-desc {
+    font-size: .82rem;
+  }
+}
+
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false

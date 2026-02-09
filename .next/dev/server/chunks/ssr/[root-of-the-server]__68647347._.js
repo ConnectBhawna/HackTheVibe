@@ -61,31 +61,54 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const SCHEDULE_ROWS = [
     {
         left: {
-            title: 'Hackathon Begins',
-            date: 'Feb 20 - 6:00 PM IST',
-            description: '36-hour online hackathon starts - begin building your projects',
+            title: 'Pre-Hackathon Livestream 1',
+            date: 'Feb 12 (Thu) - 2:00 PM UTC',
+            description: 'Stop Typing, Start Vibe Coding: A Live Build with GitHub Copilot',
             isCard: true
         },
         right: {
-            title: 'Hackathon Ends',
-            date: 'Feb 22 - 6:00 AM IST',
-            description: 'Final submissions due - all projects must be submitted by this time',
+            title: 'Pre-Hackathon Livestream 2',
+            date: 'Feb 15 (Sun) - 2:00 PM UTC',
+            description: 'Cracking the Code: How I Won Hackathon and How You Can Too',
             isCard: false
         }
     },
     {
         left: {
-            title: 'Judging Period',
-            date: 'Feb 22 8:00 AM IST - Feb 28 8:00 PM IST',
-            description: 'Panel of judges reviews all eligible submissions',
+            title: 'Pre-Hackathon Livestream 3',
+            date: 'Feb 18 (Wed) - 2:00 PM UTC',
+            description: 'Building Smarter, Not Harder: The Vibe Coding Approach to Full-Stack Dev',
             isCard: true
         },
         right: {
+            title: 'Opening Ceremony & Hacking Begins',
+            date: 'Feb 20 (Fri) - 2:00 PM UTC',
+            description: 'Opening ceremony & hacking begins for the hackathon',
+            isCard: false
+        }
+    },
+    {
+        left: {
+            title: 'Final Submissions Due',
+            date: 'Feb 22 - 2:00 AM UTC',
+            description: 'All projects must be submitted by this time',
+            isCard: true
+        },
+        right: {
+            title: 'Judging Period',
+            date: 'Feb 22 8:00 AM UTC - Feb 28 8:00 PM UTC',
+            description: 'Panel of judges reviews all eligible submissions',
+            isCard: false
+        }
+    },
+    {
+        left: {
             title: 'Winners Announced',
             date: 'Feb 23 - 2:00 PM UTC',
             description: 'Final results will be announced on February 23rd, 2026',
-            isCard: false
-        }
+            isCard: true
+        },
+        right: null
     }
 ];
 function Schedule() {
@@ -103,7 +126,7 @@ function Schedule() {
                                 children: "Hackathon Schedule"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Schedule.tsx",
-                                lineNumber: 38,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -111,13 +134,13 @@ function Schedule() {
                                 children: "Join us in the unforgettable journey designed to maximize learning, collaboration and innovation for students and developers."
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Schedule.tsx",
-                                lineNumber: 39,
+                                lineNumber: 62,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Schedule.tsx",
-                        lineNumber: 37,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -139,7 +162,7 @@ function Schedule() {
                                                                 children: row.left.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/Schedule.tsx",
-                                                                lineNumber: 53,
+                                                                lineNumber: 76,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -147,13 +170,13 @@ function Schedule() {
                                                                 children: row.left.date
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/Schedule.tsx",
-                                                                lineNumber: 54,
+                                                                lineNumber: 77,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/Schedule.tsx",
-                                                        lineNumber: 52,
+                                                        lineNumber: 75,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -161,26 +184,26 @@ function Schedule() {
                                                         children: row.left.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/Schedule.tsx",
-                                                        lineNumber: 56,
+                                                        lineNumber: 79,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/Schedule.tsx",
-                                                lineNumber: 51,
+                                                lineNumber: 74,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "timeline-dot-left"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Schedule.tsx",
-                                                lineNumber: 58,
+                                                lineNumber: 81,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/Schedule.tsx",
-                                        lineNumber: 50,
+                                        lineNumber: 73,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -189,86 +212,88 @@ function Schedule() {
                                             className: "timeline-line"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Schedule.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 86,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Schedule.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "timeline-side timeline-side-right",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "timeline-dot-right"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/components/Schedule.tsx",
-                                                lineNumber: 68,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: `timeline-content ${row.right.isCard ? 'timeline-card' : 'timeline-text'}`,
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "timeline-content-title",
-                                                        children: row.right.title
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/components/Schedule.tsx",
-                                                        lineNumber: 70,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "timeline-content-date",
-                                                        children: row.right.date
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/components/Schedule.tsx",
-                                                        lineNumber: 71,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "timeline-content-desc",
-                                                        children: row.right.description
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/components/Schedule.tsx",
-                                                        lineNumber: 72,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/components/Schedule.tsx",
-                                                lineNumber: 69,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        children: row.right && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "timeline-dot-right"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/components/Schedule.tsx",
+                                                    lineNumber: 93,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: `timeline-content ${row.right.isCard ? 'timeline-card' : 'timeline-text'}`,
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                            className: "timeline-content-title",
+                                                            children: row.right.title
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/Schedule.tsx",
+                                                            lineNumber: 95,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "timeline-content-date",
+                                                            children: row.right.date
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/Schedule.tsx",
+                                                            lineNumber: 96,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "timeline-content-desc",
+                                                            children: row.right.description
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/components/Schedule.tsx",
+                                                            lineNumber: 97,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/components/Schedule.tsx",
+                                                    lineNumber: 94,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true)
+                                    }, void 0, false, {
                                         fileName: "[project]/app/components/Schedule.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 90,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, idx, true, {
                                 fileName: "[project]/app/components/Schedule.tsx",
-                                lineNumber: 48,
+                                lineNumber: 71,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/components/Schedule.tsx",
-                        lineNumber: 46,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "schedule-footer",
-                        children: "All projects must be completed within the 36-hour timeframe. Join us for an unforgettable journey of innovation!"
+                        children: "Don't miss the pre-hackathon livestreams! All hackathon projects must be submitted by Feb 22, 6:00 AM IST. Join us for an unforgettable journey of innovation!"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Schedule.tsx",
-                        lineNumber: 80,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Schedule.tsx",
-                lineNumber: 35,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -290,7 +315,7 @@ function Schedule() {
                             transform: "rotate(15 40 40)"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Schedule.tsx",
-                            lineNumber: 88,
+                            lineNumber: 115,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -304,24 +329,24 @@ function Schedule() {
                             transform: "rotate(15 40 40)"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Schedule.tsx",
-                            lineNumber: 89,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Schedule.tsx",
-                    lineNumber: 87,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/Schedule.tsx",
-                lineNumber: 86,
+                lineNumber: 113,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Schedule.tsx",
-        lineNumber: 34,
+        lineNumber: 57,
         columnNumber: 5
     }, this);
 }

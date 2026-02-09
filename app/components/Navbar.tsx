@@ -29,7 +29,7 @@ export default function Navbar() {
           <Link href="/rules">Rules</Link>
           <Link href="/prizes">Prizes</Link>
           <Link href="/facilitators">Our Facilitators</Link>
-          <a href="https://t.me/ayahackathonnews" target="_blank" rel="noopener noreferrer">Join our community</a>
+          <a href="https://theayacommunity.com/community" target="_blank" rel="noopener noreferrer">Join our community</a>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -52,7 +52,7 @@ export default function Navbar() {
         <Link href="/rules" onClick={closeMenu}>Rules</Link>
         <Link href="/prizes" onClick={closeMenu}>Prizes</Link>
         <Link href="/facilitators" onClick={closeMenu}>Our Facilitators</Link>
-        <a href="https://t.me/ayahackathonnews" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Join our community</a>
+        <a href="https://theayacommunity.com/community" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Join our community</a>
       </div>
 
       {/* Backdrop for mobile menu */}

@@ -1,31 +1,54 @@
 const SCHEDULE_ROWS = [
   {
     left: {
-      title: 'Hackathon Begins',
-      date: 'Feb 20 - 6:00 PM IST',
-      description: '36-hour online hackathon starts - begin building your projects',
+      title: 'Pre-Hackathon Livestream 1',
+      date: 'Feb 12 (Thu) - 2:00 PM UTC',
+      description: 'Stop Typing, Start Vibe Coding: A Live Build with GitHub Copilot',
       isCard: true,
     },
     right: {
-      title: 'Hackathon Ends',
-      date: 'Feb 22 - 6:00 AM IST',
-      description: 'Final submissions due - all projects must be submitted by this time',
+      title: 'Pre-Hackathon Livestream 2',
+      date: 'Feb 15 (Sun) - 2:00 PM UTC',
+      description: 'Cracking the Code: How I Won Hackathon and How You Can Too',
       isCard: false,
     },
   },
   {
     left: {
-      title: 'Judging Period',
-      date: 'Feb 22 8:00 AM IST - Feb 28 8:00 PM IST',
-      description: 'Panel of judges reviews all eligible submissions',
+      title: 'Pre-Hackathon Livestream 3',
+      date: 'Feb 18 (Wed) - 2:00 PM UTC',
+      description: 'Building Smarter, Not Harder: The Vibe Coding Approach to Full-Stack Dev',
       isCard: true,
     },
     right: {
+      title: 'Opening Ceremony & Hacking Begins',
+      date: 'Feb 20 (Fri) - 2:00 PM UTC',
+      description: 'Opening ceremony & hacking begins for the hackathon',
+      isCard: false,
+    },
+  },
+  {
+    left: {
+      title: 'Final Submissions Due',
+      date: 'Feb 22 - 2:00 AM UTC',
+      description: 'All projects must be submitted by this time',
+      isCard: true,
+    },
+    right: {
+      title: 'Judging Period',
+      date: 'Feb 22 8:00 AM UTC - Feb 28 8:00 PM UTC',
+      description: 'Panel of judges reviews all eligible submissions',
+      isCard: false,
+    },
+  },
+  {
+    left: {
       title: 'Winners Announced',
       date: 'Feb 23 - 2:00 PM UTC',
       description: 'Final results will be announced on February 23rd, 2026',
-      isCard: false,
+      isCard: true,
     },
+    right: null,
   },
 ];
 
@@ -65,12 +88,16 @@ export default function Schedule() {
 
               {/* Right side */}
               <div className="timeline-side timeline-side-right">
-                <div className="timeline-dot-right"></div>
-                <div className={`timeline-content ${row.right.isCard ? 'timeline-card' : 'timeline-text'}`}>
-                  <h3 className="timeline-content-title">{row.right.title}</h3>
-                  <span className="timeline-content-date">{row.right.date}</span>
-                  <p className="timeline-content-desc">{row.right.description}</p>
-                </div>
+                {row.right && (
+                  <>
+                    <div className="timeline-dot-right"></div>
+                    <div className={`timeline-content ${row.right.isCard ? 'timeline-card' : 'timeline-text'}`}>
+                      <h3 className="timeline-content-title">{row.right.title}</h3>
+                      <span className="timeline-content-date">{row.right.date}</span>
+                      <p className="timeline-content-desc">{row.right.description}</p>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}
@@ -78,7 +105,7 @@ export default function Schedule() {
 
         {/* Footer note */}
         <p className="schedule-footer">
-          All projects must be completed within the 36-hour timeframe. Join us for an unforgettable journey of innovation!
+          Don&apos;t miss the pre-hackathon livestreams! All hackathon projects must be submitted by Feb 22, 6:00 AM IST. Join us for an unforgettable journey of innovation!
         </p>
       </div>
 

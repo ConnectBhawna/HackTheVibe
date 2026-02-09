@@ -59,30 +59,64 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 ;
 const rulesData = [
+    // 1. Getting Started: The Basics
     {
         number: 1,
-        title: "Submissions",
-        text: "Your project must have been entirely made during the hackathon period. You may use pre-existing assets and tools, but disclose that in your project description. You should also include an explanation of how your project relates & what problem it solves. You can use any IDE, Tool to create the project!"
+        title: "Team Size",
+        text: "Only solo participation & team of 2-4 members during the hackathon is allowed!"
     },
     {
         number: 2,
-        title: "Progress",
-        text: "YOU MUST KEEP TRACK OF YOUR PROGRESS! This can be done by having a public GitHub repository for your project. We may ask to see it at the end of the hackathon."
+        title: "Code of Conduct",
+        text: "Harassment of any kind, or the inclusion of NSFW content in your project, will result in an immediate ban. We follow the GitHub Community Code of Conduct."
     },
     {
         number: 3,
-        title: "Team Size",
-        text: "Solo developers and teams of up to 4 people are allowed. Join our community group to easily find teammates!"
+        title: "Intellectual Property",
+        text: "You own everything you build! By submitting, you grant the organizers the right to feature your project in highlight reels, social media, and wrap-up reports to celebrate your work."
     },
+    // 2. During the Hack: Rules of Play
     {
         number: 4,
-        title: "Game Content",
-        text: "Games should generally be appropriate for all ages, with the exception of scary/violent content in horror games. No offensive, hateful, or explicit content."
+        title: "Progress Tracking",
+        text: "YOU MUST KEEP TRACK OF YOUR PROGRESS! This can be done by having a public GitHub repository for your project. We may ask to see it at the end of the hackathon."
     },
     {
         number: 5,
+        title: "AI & \"Vibe Coding\" Disclosure",
+        text: "We encourage AI tools (like GitHub Copilot, Cursor, etc.). However, you must include a \"Vibe Log\" in your README explaining how you used AI to accelerate your build and what prompts or workflows were key."
+    },
+    {
+        number: 6,
+        title: "The \"No Ghosting\" Rule",
+        text: "Participants are expected to be active in the community (Discord/Slack) during the hacking period. If your project is selected for a prize, you must be available to answer brief technical questions from the judges during the judging window."
+    },
+    {
+        number: 7,
         title: "Be Kind",
         text: "Provide constructive feedback to others and maintain a supportive community atmosphere!"
+    },
+    // 3. The Build: Quality & Integrity
+    {
+        number: 8,
+        title: "Originality & Plagiarism",
+        text: "While you can use libraries, APIs, and open-source frameworks, the core logic and \"vibe\" of the project must be your own. \"Skinning\" an existing project (changing just the UI of someone else's work) is strictly prohibited and will lead to immediate disqualification."
+    },
+    {
+        number: 9,
+        title: "Submissions Timeline",
+        text: "Your project must have been entirely made during the hackathon period. You may use pre-existing assets, but you must disclose them and explain how your project relates & what problem it solves."
+    },
+    // 4. The Finish Line: Shipping & Eligibility
+    {
+        number: 10,
+        title: "Technical Requirements (The \"Ship\" Rule)",
+        text: "To be eligible for judging, your submission must include: a link to the public GitHub repository; a short demo video (1–2 minutes) or a live hosted link (Vercel, Netlify, etc.); and a clear README with setup instructions."
+    },
+    {
+        number: 11,
+        title: "Eligibility Check",
+        text: "Projects without a working demo or a README will be automatically moved to the bottom of the pile to save judges' time."
     }
 ];
 function Rules() {
@@ -95,14 +129,14 @@ function Rules() {
                 children: "Rules"
             }, void 0, false, {
                 fileName: "[project]/app/components/Rules.tsx",
-                lineNumber: 33,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "rules-title-underline"
             }, void 0, false, {
                 fileName: "[project]/app/components/Rules.tsx",
-                lineNumber: 34,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -119,7 +153,7 @@ function Rules() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/Rules.tsx",
-                                lineNumber: 40,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -127,24 +161,24 @@ function Rules() {
                                 children: rule.text
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Rules.tsx",
-                                lineNumber: 43,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, idx, true, {
                         fileName: "[project]/app/components/Rules.tsx",
-                        lineNumber: 39,
+                        lineNumber: 76,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/components/Rules.tsx",
-                lineNumber: 37,
+                lineNumber: 74,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Rules.tsx",
-        lineNumber: 31,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 }

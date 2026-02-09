@@ -1,2 +1,16 @@
-[00:00:00.626] Server  LOG     ✓ Ready in 452ms
-[00:00:05.902] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.347] Server  LOG     ✓ Ready in 1170ms
+[00:00:09.611] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:23.582] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:04:07.859] Server  ERROR   ⨯ TypeError: Cannot read properties of null (reading 'isCard')
+[00:04:07.982] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'isCard')
+[00:04:16.680] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:25.263] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:18:49.486] Server  LOG     ✓ Compiled in 25ms
+[01:15:46.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:41.794] Server  LOG     ✓ Compiled in 60ms
+[01:23:56.095] Server  LOG     ✓ Compiled in 34ms
+[01:24:09.989] Server  LOG     ✓ Compiled in 57ms
+[01:33:12.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:35.106] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:35:42.441] Server  LOG     ✓ Compiled in 27ms
+[01:35:49.760] Server  LOG     ✓ Compiled in 29ms
