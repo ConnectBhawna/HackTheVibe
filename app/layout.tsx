@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hack the Vibe — Hackathon",
-  description: "Hack the Vibe — A 36-hour vibe coding hackathon",
+  title: "HackTheVibe Hackathon",
+  description: "HackTheVibe, A 36-hour vibe coding hackathon",
+  icons: {
+    // Use the mascot from the public folder as the site icon / favicon
+    icon: "/mascot.png",
+    shortcut: "/mascot.png",
+    apple: "/mascot.png",
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/mascot.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/mascot.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased poster-theme`}
       >

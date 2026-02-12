@@ -1,14 +1,11 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import FacilitatorCard from "../components/FacilitatorCard";
+import FacilitatorCard from "./FacilitatorCard";
 
 const facilitators = [
   {
     name: "Harshavardhan Bajoria",
     description:
       "Microsoft Learn Student Ambassador & passionate developer building impactful solutions with cloud and AI technologies.",
-    photo:
-      "/facilitators/harshavardhan.jpeg",
+    photo: "/facilitators/harshavardhan.jpeg",
     linkedIn: "https://www.linkedin.com/in/harshavardhan-bajoria/",
   },
   {
@@ -71,7 +68,7 @@ const facilitators = [
   {
     name: "Thomas Reinhardt",
     description:
-      "Community Lead at Mimosa, fostering connections and driving engagement in the blockchain ecosystem.",
+      "Community Lead at Mimo Capital, fostering connections and driving engagement in the blockchain ecosystem.",
     photo: "/facilitators/thomas.jpeg",
     linkedIn: "https://www.linkedin.com/in/thomas-reinhardt-6874bb166/",
   },
@@ -91,13 +88,11 @@ const facilitators = [
   },
 ];
 
-export default function FacilitatorsPage() {
+export default function Facilitators() {
   return (
-    <main className="rules-page-bg">
-      <Navbar />
-
-      <section className="rules-container" style={{ maxWidth: 1100 }}>
-        <h2 className="rules-title">Our Facilitators</h2>
+    <section id="facilitators" className="site-section" style={{ paddingTop: 80 }}>
+      <div className="section-inner" style={{ textAlign: "center" }}>
+        <h2 className="section-title">Our Facilitators</h2>
         <div className="rules-title-underline" />
 
         <div className="facilitators-grid">
@@ -111,9 +106,7 @@ export default function FacilitatorsPage() {
             />
           ))}
         </div>
-      </section>
-
-      <Footer />
-    </main>
+      </div>
+    </section>
   );
 }
