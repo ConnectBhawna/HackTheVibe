@@ -739,14 +739,15 @@
 
 .nav-links-desktop {
   align-items: center;
-  gap: 16px;
+  gap: 6px;
   display: flex;
 }
 
 .site-nav a {
   color: var(--poster-blue);
   border-radius: 6px;
-  padding: 8px 14px;
+  padding: 8px 12px;
+  font-size: .9rem;
   font-weight: 700;
   text-decoration: none;
   transition: background .2s;
@@ -1565,6 +1566,417 @@ html {
 
   .facilitator-desc {
     font-size: .82rem;
+  }
+}
+
+.hackers-guide-container {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 48px 48px;
+  box-shadow: 0 4px 24px #0737ff14;
+}
+
+.guide-section {
+  margin-top: 36px;
+}
+
+.guide-section-title {
+  color: var(--poster-blue);
+  text-align: left;
+  letter-spacing: -.01em;
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.guide-card-highlight {
+  background: var(--rules-card-bg);
+  border: 2.5px solid var(--poster-blue);
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 4px 4px #0737ff1f;
+}
+
+.guide-list {
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.guide-list-item {
+  color: #222;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  display: flex;
+}
+
+.guide-icon {
+  flex-shrink: 0;
+  margin-top: 1px;
+  font-size: 1.3rem;
+}
+
+.judging-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  display: grid;
+}
+
+.judging-card {
+  background: var(--poster-white);
+  border: 2.5px solid var(--poster-blue);
+  text-align: left;
+  border-radius: 12px;
+  padding: 24px 22px;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 4px 4px #0737ff1f;
+}
+
+.judging-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px #0737ff2e;
+}
+
+.judging-card-title {
+  color: var(--poster-black);
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.judging-card-divider {
+  background: linear-gradient(90deg, var(--poster-blue), transparent);
+  border-radius: 1px;
+  height: 2px;
+  margin-bottom: 14px;
+}
+
+.judging-card-list {
+  color: #444;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  font-size: .95rem;
+  line-height: 1.5;
+  list-style: none;
+  display: flex;
+}
+
+.mentorship-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  display: grid;
+}
+
+.mentorship-card {
+  background: var(--poster-white);
+  border: 2.5px solid var(--poster-blue);
+  border-radius: 12px;
+  padding: 0;
+  transition: transform .2s, box-shadow .2s;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 4px 4px #0737ff1f;
+}
+
+.mentorship-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px #0737ff2e;
+}
+
+.mentorship-badge {
+  background: var(--poster-blue);
+  color: #fff;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  letter-spacing: .08em;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 10px;
+  font-size: .78rem;
+  font-weight: 800;
+  display: flex;
+  transform: rotate(180deg);
+}
+
+.mentorship-info {
+  flex-direction: column;
+  justify-content: center;
+  padding: 22px 20px;
+  display: flex;
+}
+
+.mentorship-round-title {
+  color: var(--poster-black);
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.mentorship-date {
+  color: #555;
+  margin: 0 0 2px;
+  font-size: .9rem;
+}
+
+.mentorship-time {
+  color: #777;
+  margin: 0;
+  font-family: monospace;
+  font-size: .85rem;
+}
+
+.guide-footer-message {
+  text-align: center;
+  border-top: 2px solid #0737ff1a;
+  margin-top: 48px;
+  padding-top: 32px;
+}
+
+.guide-luck-text {
+  color: var(--poster-blue);
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.guide-luck-subtext {
+  color: #444;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.guide-luck-subtext em {
+  color: var(--poster-blue);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hackers-guide-container {
+    padding: 28px 18px 32px;
+  }
+
+  .judging-grid, .mentorship-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-section-title {
+    font-size: 1.3rem;
+  }
+}
+
+.challenges-container {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 48px 48px;
+  box-shadow: 0 4px 24px #0737ff14;
+}
+
+.challenges-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 8px;
+  display: grid;
+}
+
+.challenge-card {
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: transform .22s, box-shadow .22s;
+  position: relative;
+  overflow: hidden;
+}
+
+.challenge-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px #0737ff26;
+}
+
+.challenge-card-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.challenge-card-meme {
+  color: #fff;
+  background: linear-gradient(135deg, #0737ff 0%, #1e50ff 100%);
+  border: 3px solid #0530d9;
+}
+
+.challenge-card-creative {
+  color: #fff;
+  background: linear-gradient(135deg, #0630e6 0%, #0a3fff 100%);
+  border: 3px solid #0428c2;
+}
+
+.challenge-card:before {
+  content: "";
+  pointer-events: none;
+  background-image: repeating-linear-gradient(to right, #ffffff0a 0 1px, #0000 1px 40px), repeating-linear-gradient(#ffffff0a 0 1px, #0000 1px 40px);
+  border-radius: 14px;
+  position: absolute;
+  inset: 0;
+}
+
+.challenge-badge {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  letter-spacing: .06em;
+  background: #fff3;
+  border: 1px solid #ffffff4d;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  padding: 5px 14px;
+  font-size: .78rem;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.challenge-card-title {
+  z-index: 1;
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  position: relative;
+}
+
+.challenge-card-divider {
+  background: linear-gradient(90deg, #fff6, #0000);
+  border-radius: 1px;
+  height: 2px;
+  margin-bottom: 16px;
+}
+
+.challenge-details {
+  z-index: 1;
+  position: relative;
+}
+
+.challenge-subtitle {
+  color: #fffffff2;
+  margin: 0 0 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.challenge-rules-list {
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.challenge-rules-list li {
+  color: #ffffffe6;
+  padding-left: 20px;
+  font-size: .92rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+.challenge-rules-list li:before {
+  content: "→";
+  color: #fff9;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+
+.challenge-link {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #ffd400 !important;
+}
+
+.challenge-link:hover {
+  color: #ffe44d !important;
+}
+
+.challenge-hashtag {
+  color: #ffd400;
+  background: #ffffff26;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-weight: 700;
+}
+
+.challenge-prize-box {
+  background: #ffffff1f;
+  border: 1px solid #fff3;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 12px 16px;
+  font-size: .95rem;
+  display: flex;
+}
+
+.challenge-prize-icon {
+  font-size: 1.3rem;
+}
+
+.challenge-bonus {
+  color: #ffd400;
+  background: #ffd40026;
+  border: 1px solid #ffd4004d;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  font-size: .88rem;
+  font-weight: 600;
+}
+
+.challenge-deadline {
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: .9rem;
+  display: flex;
+}
+
+.challenge-deadline-label {
+  color: #ffffffb3;
+  font-weight: 700;
+}
+
+.challenge-deadline-date {
+  color: #ffd400;
+  font-weight: 800;
+}
+
+.challenge-powered {
+  color: #fff9;
+  font-size: .82rem;
+}
+
+.challenge-powered strong {
+  color: #ffffffe6;
+}
+
+@media (max-width: 768px) {
+  .challenges-container {
+    padding: 28px 18px 32px;
+  }
+
+  .challenges-grid {
+    grid-template-columns: 1fr;
   }
 }
 

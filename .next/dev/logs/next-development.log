@@ -1,16 +1,106 @@
-[00:00:01.347] Server  LOG     ✓ Ready in 1170ms
-[00:00:09.611] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:23.582] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:04:07.859] Server  ERROR   ⨯ TypeError: Cannot read properties of null (reading 'isCard')
-[00:04:07.982] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'isCard')
-[00:04:16.680] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:25.263] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:18:49.486] Server  LOG     ✓ Compiled in 25ms
-[01:15:46.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:20:41.794] Server  LOG     ✓ Compiled in 60ms
-[01:23:56.095] Server  LOG     ✓ Compiled in 34ms
-[01:24:09.989] Server  LOG     ✓ Compiled in 57ms
-[01:33:12.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:33:35.106] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:35:42.441] Server  LOG     ✓ Compiled in 27ms
-[01:35:49.760] Server  LOG     ✓ Compiled in 29ms
+[00:00:01.362] Server  LOG     ✓ Ready in 1188ms
+[00:00:23.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:56.564] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:12:30.014] Server  LOG     ✓ Compiled in 64ms
+[00:12:40.326] Server  LOG     ✓ Compiled in 22ms
+[00:13:47.085] Server  LOG     ✓ Compiled in 48ms
+[00:13:59.402] Server  LOG     ✓ Compiled in 51ms
+[00:36:24.522] Server  LOG     ✓ Compiled in 49ms
+[00:36:30.961] Server  LOG     ✓ Compiled in 47ms
+[00:37:54.286] Server  LOG     ✓ Compiled in 47ms
+[00:38:02.863] Server  LOG     ✓ Compiled in 47ms
+[00:38:09.431] Server  LOG     ✓ Compiled in 48ms
+[00:38:17.279] Server  LOG     ✓ Compiled in 42ms
+[00:42:59.947] Server  LOG     ✓ Compiled in 39ms
+[00:43:17.297] Server  LOG     ✓ Compiled in 42ms
+[00:47:45.489] Browser ERROR   ./app/components/Challenges.tsx:126:13
+Parsing ecmascript source code failed
+  124 |           </div>
+  125 |         </div>
+> 126 |       </div>
+      |             ^
+> 127 |     </section>
+      | ^^^^^
+  128 |   );
+  129 | }
+  130 |
+
+Expected '</', got 'jsx text'
+
+Import trace:
+  Server Component:
+    ./app/components/Challenges.tsx
+    ./app/challenges/page.tsx
+[00:47:52.574] Browser ERROR   ./app/components/Challenges.tsx:133:13
+Parsing ecmascript source code failed
+  131 |           </div>
+  132 |         </div>
+> 133 |       </div>
+      |             ^
+> 134 |     </section>
+      | ^^^^^
+  135 |   );
+  136 | }
+  137 |
+
+Expected '</', got 'jsx text'
+
+Import trace:
+  Server Component:
+    ./app/components/Challenges.tsx
+    ./app/challenges/page.tsx
+[00:48:06.095] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="challenges/" loading={Promise}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/challenges" tree={[...]} params={{}} cacheNode={{rsc:Promise, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="challenges...">
+                        <SegmentTrieNode>
+                        <ChallengesPage>
+                          <main className="rules-page-bg">
+                            <Navbar>
+                            <Challenges>
+                              <section className="challenges...">
+                                <h2>
+                                <div>
+                                <div className="challenges...">
+>                                 <a
+>                                   href="https://x.com/theayacommunity/status/2024764294525575393?s=20"
+>                                   target="_blank"
+>                                   rel="noopener noreferrer"
+>                                   className="challenge-card-link"
+>                                 >
+                                    <div className="challenge-...">
+                                      <div>
+                                      <h3>
+                                      <div>
+                                      <div className="challenge-...">
+                                        <h4>
+                                        <ul className="challenge-...">
+                                          <li>
+                                          <li>
+>                                           <a
+>                                             href="https://x.com/theayacommunity"
+>                                             target="_blank"
+>                                             rel="noopener noreferrer"
+>                                             className="challenge-link"
+>                                           >
+                                          ...
+                                        ...
+                                  ...
+                            ...
+                      ...
+                    ...
+          ...
+
+[00:48:06.095] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[00:48:21.975] Server  LOG     ✓ Compiled in 50ms
