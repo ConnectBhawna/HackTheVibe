@@ -28,7 +28,7 @@ export default function Navbar() {
           <Link href="/timeline">Timeline</Link>
           <Link href="/rules">Rules</Link>
           <Link href="/hackers-guide">Hacker&apos;s Guide</Link>
-          <Link href="/challenges">Challenges</Link>
+          <Link href="/projects">Projects</Link>
           <Link href="/prizes">Prizes</Link>
           <Link href="/facilitators">Our Facilitators</Link>
           <a href="https://theayacommunity.com/community" target="_blank" rel="noopener noreferrer">Join our community</a>
@@ -53,7 +53,7 @@ export default function Navbar() {
         <Link href="/timeline" onClick={closeMenu}>Timeline</Link>
         <Link href="/rules" onClick={closeMenu}>Rules</Link>
         <Link href="/hackers-guide" onClick={closeMenu}>Hacker&apos;s Guide</Link>
-        <Link href="/challenges" onClick={closeMenu}>Challenges</Link>
+        <Link href="/projects" onClick={closeMenu}>Projects</Link>
         <Link href="/prizes" onClick={closeMenu}>Prizes</Link>
         <Link href="/facilitators" onClick={closeMenu}>Our Facilitators</Link>
         <a href="https://theayacommunity.com/community" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Join our community</a>

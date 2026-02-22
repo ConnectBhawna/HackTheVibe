@@ -1,55 +1,118 @@
-[00:00:01.362] Server  LOG     ✓ Ready in 1188ms
-[00:00:23.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:56.564] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:12:30.014] Server  LOG     ✓ Compiled in 64ms
-[00:12:40.326] Server  LOG     ✓ Compiled in 22ms
-[00:13:47.085] Server  LOG     ✓ Compiled in 48ms
-[00:13:59.402] Server  LOG     ✓ Compiled in 51ms
-[00:36:24.522] Server  LOG     ✓ Compiled in 49ms
-[00:36:30.961] Server  LOG     ✓ Compiled in 47ms
-[00:37:54.286] Server  LOG     ✓ Compiled in 47ms
-[00:38:02.863] Server  LOG     ✓ Compiled in 47ms
-[00:38:09.431] Server  LOG     ✓ Compiled in 48ms
-[00:38:17.279] Server  LOG     ✓ Compiled in 42ms
-[00:42:59.947] Server  LOG     ✓ Compiled in 39ms
-[00:43:17.297] Server  LOG     ✓ Compiled in 42ms
-[00:47:45.489] Browser ERROR   ./app/components/Challenges.tsx:126:13
-Parsing ecmascript source code failed
-  124 |           </div>
-  125 |         </div>
-> 126 |       </div>
-      |             ^
-> 127 |     </section>
-      | ^^^^^
-  128 |   );
-  129 | }
-  130 |
+[00:00:00.760] Server  LOG     ✓ Ready in 590ms
+[00:00:07.030] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:18.084] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
 
-Expected '</', got 'jsx text'
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:true, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="challenges/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/challenges" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="challenges...">
+                        <SegmentTrieNode>
+                        <ChallengesPage>
+                          <main className="rules-page-bg">
+                            <Lazy>
+                            <Challenges>
+                              <section className="challenges...">
+                                <h2>
+                                <div>
+                                <div className="challenges...">
+>                                 <a
+>                                   href="https://x.com/theayacommunity/status/2024764294525575393?s=20"
+>                                   target="_blank"
+>                                   rel="noopener noreferrer"
+>                                   className="challenge-card-link"
+>                                 >
+                                    <div className="challenge-...">
+                                      <div>
+                                      <h3>
+                                      <div>
+                                      <div className="challenge-...">
+                                        <h4>
+                                        <ul className="challenge-...">
+                                          <li>
+                                          <li>
+>                                           <a
+>                                             href="https://x.com/theayacommunity"
+>                                             target="_blank"
+>                                             rel="noopener noreferrer"
+>                                             className="challenge-link"
+>                                           >
+                                          ...
+                                        ...
+                                  ...
+                            ...
+                      ...
+                    ...
+          ...
 
-Import trace:
-  Server Component:
-    ./app/components/Challenges.tsx
-    ./app/challenges/page.tsx
-[00:47:52.574] Browser ERROR   ./app/components/Challenges.tsx:133:13
-Parsing ecmascript source code failed
-  131 |           </div>
-  132 |         </div>
-> 133 |       </div>
-      |             ^
-> 134 |     </section>
-      | ^^^^^
-  135 |   );
-  136 | }
-  137 |
+[00:00:18.084] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[00:00:18.084] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:04:31.979] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:06.759] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
 
-Expected '</', got 'jsx text'
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:true, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="challenges/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/challenges" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="challenges...">
+                        <SegmentTrieNode>
+                        <ChallengesPage>
+                          <main className="rules-page-bg">
+                            <Lazy>
+                            <Challenges>
+                              <section className="challenges...">
+                                <h2>
+                                <div>
+                                <div className="challenges...">
+>                                 <a
+>                                   href="https://x.com/theayacommunity/status/2024764294525575393?s=20"
+>                                   target="_blank"
+>                                   rel="noopener noreferrer"
+>                                   className="challenge-card-link"
+>                                 >
+                                    <div className="challenge-...">
+                                      <div>
+                                      <h3>
+                                      <div>
+                                      <div className="challenge-...">
+                                        <h4>
+                                        <ul className="challenge-...">
+                                          <li>
+                                          <li>
+>                                           <a
+>                                             href="https://x.com/theayacommunity"
+>                                             target="_blank"
+>                                             rel="noopener noreferrer"
+>                                             className="challenge-link"
+>                                           >
+                                          ...
+                                        ...
+                                  ...
+                            ...
+                      ...
+                    ...
+          ...
 
-Import trace:
-  Server Component:
-    ./app/components/Challenges.tsx
-    ./app/challenges/page.tsx
-[00:48:06.095] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:06:06.759] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[00:06:06.759] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:07:08.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:08.473] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <a> a 
 
   ...
@@ -57,11 +120,11 @@ This will cause a hydration error.%s <a> a
       <ScrollAndFocusHandler segmentPath={[...]}>
         <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
           <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-            <LoadingBoundary name="challenges/" loading={Promise}>
+            <LoadingBoundary name="challenges/" loading={null}>
               <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
                 <RedirectBoundary>
                   <RedirectErrorBoundary router={{...}}>
-                    <InnerLayoutRouter url="/challenges" tree={[...]} params={{}} cacheNode={{rsc:Promise, ...}} ...>
+                    <InnerLayoutRouter url="/challenges" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
                       <SegmentViewNode type="page" pagePath="challenges...">
                         <SegmentTrieNode>
                         <ChallengesPage>
@@ -101,6 +164,97 @@ This will cause a hydration error.%s <a> a
                     ...
           ...
 
-[00:48:06.095] Browser ERROR   <%s> cannot contain a nested %s.
+[00:07:08.473] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. a <a>
-[00:48:21.975] Server  LOG     ✓ Compiled in 50ms
+[00:07:08.473] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="challenges/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <InnerLayoutRouter url="/challenges" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                    <SegmentViewNode type="page" pagePath="challenges...">
+                      <SegmentTrieNode>
+                      <ChallengesPage>
+                        <main className="rules-page-bg">
+                          <Navbar>
+                          <Challenges>
+                            <section className="challenges...">
+                              <h2>
+                              <div>
+                              <div className="challenges...">
+                                <a href="https://x...." target="_blank" rel="noopener n..." className="challenge-...">
++                                 <div className="challenge-card challenge-card-meme">
+                                ...
+                          ...
+                    ...
+                  ...
+        ...
+
+[00:07:10.219] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:07:16.391] Server  LOG     ✓ Compiled in 227ms
+[00:07:24.849] Server  LOG     ✓ Compiled in 34ms
+[00:08:14.003] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:22.427] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:15.252] Server  LOG     ✓ Compiled in 71ms
+[00:12:21.919] Server  LOG     ✓ Compiled in 51ms
+[00:13:28.609] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:17:06.203] Server  LOG     ✓ Compiled in 29ms
+[00:17:15.186] Server  LOG     ✓ Compiled in 52ms
+[00:18:21.226] Server  LOG     ✓ Compiled in 52ms
+[00:18:41.323] Server  LOG     ✓ Compiled in 25ms
+[00:18:49.055] Server  LOG     ✓ Compiled in 29ms
+[00:19:03.991] Server  LOG     ✓ Compiled in 47ms
+[00:21:36.980] Server  LOG     ✓ Compiled in 63ms
+[00:21:45.159] Server  LOG     ✓ Compiled in 26ms
+[00:21:54.180] Server  LOG     ✓ Compiled in 26ms
+[00:22:01.733] Server  LOG     ✓ Compiled in 21ms
+[00:22:08.833] Server  LOG     ✓ Compiled in 26ms
+[00:22:16.249] Server  LOG     ✓ Compiled in 22ms
+[00:22:24.092] Server  LOG     ✓ Compiled in 26ms
+[00:22:39.302] Server  LOG     ✓ Compiled in 31ms
+[00:22:47.122] Server  LOG     ✓ Compiled in 24ms
+[00:22:54.329] Server  LOG     ✓ Compiled in 23ms
+[00:23:03.244] Server  LOG     ✓ Compiled in 26ms
+[00:23:10.372] Server  LOG     ✓ Compiled in 24ms
+[00:23:18.447] Server  LOG     ✓ Compiled in 25ms
+[00:23:26.290] Server  LOG     ✓ Compiled in 26ms
+[00:23:33.847] Server  LOG     ✓ Compiled in 29ms
+[00:23:42.579] Server  LOG     ✓ Compiled in 36ms
+[00:23:50.696] Server  LOG     ✓ Compiled in 27ms
+[00:24:00.609] Server  LOG     ✓ Compiled in 25ms
+[00:24:11.751] Server  LOG     ✓ Compiled in 25ms
+[00:24:28.113] Server  LOG     ✓ Compiled in 24ms
+[00:24:36.283] Server  LOG     ✓ Compiled in 26ms
+[00:24:44.072] Server  LOG     ✓ Compiled in 27ms
+[00:24:55.555] Server  LOG     ✓ Compiled in 32ms
+[00:25:29.213] Server  LOG     ✓ Compiled in 22ms
+[00:25:37.064] Server  LOG     ✓ Compiled in 23ms
+[00:25:43.463] Server  LOG     ✓ Compiled in 24ms
+[00:25:50.391] Server  LOG     ✓ Compiled in 27ms
+[00:25:58.605] Server  LOG     ✓ Compiled in 34ms
+[00:26:06.370] Server  LOG     ✓ Compiled in 27ms
+[00:26:14.630] Server  LOG     ✓ Compiled in 25ms
+[00:26:22.853] Server  LOG     ✓ Compiled in 31ms
+[00:26:31.070] Server  LOG     ✓ Compiled in 24ms
+[00:26:38.209] Server  LOG     ✓ Compiled in 26ms
+[00:26:46.635] Server  LOG     ✓ Compiled in 23ms
+[00:26:52.826] Server  LOG     ✓ Compiled in 24ms
+[00:26:59.441] Server  LOG     ✓ Compiled in 23ms
+[00:27:06.095] Server  LOG     ✓ Compiled in 23ms
+[00:27:15.626] Server  LOG     ✓ Compiled in 24ms
+[00:27:38.898] Server  LOG     ✓ Compiled in 35ms
