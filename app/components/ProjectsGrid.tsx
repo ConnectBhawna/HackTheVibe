@@ -11,6 +11,7 @@ interface Project {
   liveUrl?: string;
   category: string;
   emoji: string;
+  winner?: string;
 }
 
 const PROJECTS: Project[] = [
@@ -165,6 +166,7 @@ const PROJECTS: Project[] = [
     liveUrl: "https://quest-log-sepia.vercel.app",
     category: "Education",
     emoji: "⚔️",
+    winner: " Best Girls Team",
   },
   {
     id: 16,
@@ -186,6 +188,7 @@ const PROJECTS: Project[] = [
     liveUrl: "https://drug-forge.vercel.app/",
     category: "AI/ML",
     emoji: "💊",
+    winner: " 2nd Runner Up",
   },
   {
     id: 18,
@@ -249,6 +252,7 @@ const PROJECTS: Project[] = [
     liveUrl: "https://easyalgo-app.vercel.app/",
     category: "Education",
     emoji: "🧩",
+    winner: " Best Use of Copilot",
   },
   {
     id: 24,
@@ -259,6 +263,7 @@ const PROJECTS: Project[] = [
     github: "https://github.com/nithya6875/gitbuddy",
     category: "Developer Tool",
     emoji: "🐾",
+    winner: " Best Overall Winner",
   },
   {
     id: 25,
@@ -352,6 +357,7 @@ const PROJECTS: Project[] = [
     github: "https://github.com/NischayUpadhya/startup_sage",
     category: "AI/ML",
     emoji: "🧙",
+    winner: " 1st Runner Up",
   },
   {
     id: 34,
@@ -588,7 +594,7 @@ export default function ProjectsGrid() {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filtered = useMemo(() => {
-    return PROJECTS.filter((p) => {
+    const matched = PROJECTS.filter((p) => {
       const matchesSearch =
         search.trim() === "" ||
         p.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -598,6 +604,23 @@ export default function ProjectsGrid() {
         activeCategory === "All" || p.category === activeCategory;
       return matchesSearch && matchesCategory;
     });
+
+    // Pin winners at the top in order
+    const winnerOrder = [
+      " Best Overall Winner",
+      " 1st Runner Up",
+      " 2nd Runner Up",
+      " Best Girls Team",
+      " Best Use of Copilot",
+    ];
+    const winners = matched
+      .filter((p) => p.winner)
+      .sort(
+        (a, b) =>
+          winnerOrder.indexOf(a.winner!) - winnerOrder.indexOf(b.winner!)
+      );
+    const nonWinners = matched.filter((p) => !p.winner);
+    return [...winners, ...nonWinners];
   }, [search, activeCategory]);
 
   return (
@@ -639,7 +662,7 @@ export default function ProjectsGrid() {
           ))}
         </div>
         <p className="projects-subtitle">
-          {PROJECTS.length} amazing projects built during HackTheVibe
+          70 amazing projects built during HackTheVibe
         </p>
       </div>
 
@@ -651,8 +674,11 @@ export default function ProjectsGrid() {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-card-new"
+            className={`project-card-new ${project.winner ? "project-card-winner" : ""}`}
           >
+            {project.winner && (
+              <div className="project-winner-banner">{project.winner}</div>
+            )}
             <div className="project-card-header">
               <div className="project-card-avatar">{project.emoji}</div>
               <div className="project-card-info">
@@ -680,9 +706,6 @@ export default function ProjectsGrid() {
                 </svg>
                 Built at Hack The Vibe 2026
               </span>
-              {project.liveUrl && (
-                <span className="project-card-live-badge">🌐 Live</span>
-              )}
             </div>
           </a>
         ))}

@@ -27,9 +27,9 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           <Link href="/timeline">Timeline</Link>
           <Link href="/rules">Rules</Link>
-          <Link href="/hackers-guide">Hacker&apos;s Guide</Link>
+         
           <Link href="/projects">Projects</Link>
-          <Link href="/prizes">Prizes</Link>
+          
           <Link href="/facilitators">Our Facilitators</Link>
           <a href="https://theayacommunity.com/community" target="_blank" rel="noopener noreferrer">Join our community</a>
         </div>

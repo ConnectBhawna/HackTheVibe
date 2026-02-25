@@ -762,6 +762,31 @@ section.site-section {
   border-color: var(--poster-blue);
 }
 
+/* Winner card highlight */
+.project-card-winner {
+  border: 2px solid #f59e0b;
+  background: linear-gradient(135deg, #fffbeb 0%, #fff 40%);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card-winner:hover {
+  border-color: #d97706;
+  box-shadow: 0 12px 32px rgba(245, 158, 11, 0.18);
+}
+
+.project-winner-banner {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 6px 16px;
+  margin: -22px -24px 16px -24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* Card header: avatar + name/team + category badge */
 .project-card-header {
   display: flex;
